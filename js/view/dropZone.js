@@ -1,4 +1,4 @@
-import BoardAPI from "../api/BoardAPi.js";
+import BoardAPI from "./js/api/BoardAPi.js";
 export default class DropZone {
     static createDropZone() {
         const range = document.createRange();

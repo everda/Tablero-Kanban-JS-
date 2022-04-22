@@ -1,4 +1,4 @@
-import BoardApi from '../api/BoardAPi.js';
+import BoardApi from './js/api/BoardAPi.js';
 import Item from './item.js';
 import DropZone from './dropZone.js';
 
