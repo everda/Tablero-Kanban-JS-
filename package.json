@@ -1,0 +1,20 @@
+{
+  "name": "kanbanboard",
+  "version": "1.0.0",
+  "description": "Tablero Kanban, basado en Video Youtube de DCOde. gracias capo por enseñar.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everda/Tablero-Kanban-JS-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/everda/Tablero-Kanban-JS-/issues"
+  },
+  "homepage": "https://github.com/everda/Tablero-Kanban-JS-#readme"
+}
