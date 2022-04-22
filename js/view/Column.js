@@ -1,4 +1,4 @@
-import BoardApi from '../api/BoardAPI.js';
+import BoardAPI from '../api/BoardAPI.js';
 import Item from './item.js';
 import DropZone from './dropZone.js';
 
@@ -16,14 +16,14 @@ export default class Column {
         this.elements.title.textContent = title;
         this.elements.items.appendChild(firstDropZone);
         this.elements.button.addEventListener("click", () => {
-            const newItem = BoardApi.insertItem(id, "");
+            const newItem = BoardAPI.insertItem(id, "");
            
             this.renderItem(newItem);
         });
 
         
 
-        BoardApi.getItems(id).forEach(item => {
+        BoardAPI.getItems(id).forEach(item => {
             this.renderItem(item);
         });
 
