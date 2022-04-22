@@ -1,4 +1,4 @@
-import Column from '../view/Column.js';
+import Column from './Column.js';
 
 export default class boardView {
     constructor(root) {

@@ -2,7 +2,7 @@ import BoardApi from '../api/BoardAPI.js';
 import Item from './item.js';
 import DropZone from './dropZone.js';
 
-export default class column {
+export default class Column {
     constructor(id, title) {
         const firstDropZone = DropZone.createDropZone();
         
