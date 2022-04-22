@@ -7,7 +7,7 @@ export default class Column {
         const firstDropZone = DropZone.createDropZone();
         
         this.elements = [];
-        this.elements.root = column.createRoot();
+        this.elements.root = Column.createRoot();
         this.elements.title = this.elements.root.querySelector(".board__column-title");
         this.elements.items = this.elements.root.querySelector(".board__column-items");
         this.elements.button = this.elements.root.querySelector(".board__add-item");
