@@ -1,0 +1,95 @@
+body {
+    font: 1em sans-serif;
+}
+
+.board {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #0f3b3f;
+    padding: 10px;
+}
+
+.board__column:not(:last-child) {
+    margin-right: 30px;
+}
+
+.board__column {
+    flex: 1;
+    border-radius: 5px;
+    background-color: #0f3b3f;
+    padding: 10px;
+}
+
+.board__column-title {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    user-select: none;
+}
+
+.board__column-items {
+    
+    background: #0f3b3f
+}
+
+
+.board__item-container {
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    
+}
+.board__item-input {
+    background: white;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.board__item-close{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.board__item-close:hover{
+    background-color: #0f3b3f
+}
+
+
+.board__dropzone {
+    height: 10px;
+    transition: background 0.15s height 0.15s;
+    background: #0f3b3f
+}
+
+.board__dropzone-active {
+    height: 20px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.board__add-item {
+    font-size: 16px;
+    color: white;
+    padding: 10px 0px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #06626b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.x {
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
