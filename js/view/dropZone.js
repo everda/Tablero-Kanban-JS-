@@ -1,4 +1,4 @@
-import BoardAPI from '/js/api/BoardAPI.js';
+import BoardAPI from '../api/BoardAPI.js';
 
 export default class DropZone {
     static createDropZone() {
