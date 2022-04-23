@@ -21,12 +21,9 @@ export default class Item {
             e.preventDefault();
         });
 
-
-
         const onEdit = () => {
 
             const newContent = this.elements.input.textContent.trim();
-
 
             if (newContent !== this.content) {
                 console.log(id, newContent)
@@ -39,15 +36,35 @@ export default class Item {
 
         this.elements.input.addEventListener("blur", onEdit);
         this.elements.close.addEventListener("click", (e) => {
-            let alert = confirm("esta seguro que quiere borrar el item?")
-          
-            if (alert) {
-                BoardAPI.deleteItem(id);
-                //this.elements.root.remove();
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!',
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+            }).then((result) => {
+                if (result.value) {
+                    BoardAPI.deleteItem(id);
+                    //this.elements.root.remove();
 
-                this.elements.input.removeEventListener("blur", onEdit);
-                this.elements.root.parentElement.removeChild(this.elements.root);
-            }
+                    this.elements.input.removeEventListener("blur", onEdit);
+                    this.elements.root.parentElement.removeChild(this.elements.root);
+                }
+            })
+
+            // let alert = confirm("esta seguro que quiere borrar el item?")
+
+            // if (alert) {
+
+            // }
 
 
         })
